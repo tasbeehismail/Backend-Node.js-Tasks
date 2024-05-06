@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "tasbeeh",
+    "password": "123",
+    "email": "tasbeeh@gmail.com",
+    "deptID": 1
+  },
+  {
+    "id": 2,
+    "name": "anas",
+    "password": "1234",
+    "email": "anas@gmail.com",
+    "deptID": 3
+  },
+  {
+    "name": "wafaa",
+    "password": "12334",
+    "email": "wafaa@gmail.com",
+    "deptID": 1,
+    "id": 3
+  },
+  {
+    "name": "habiba",
+    "password": "1233489",
+    "email": "habiba@gmail.com",
+    "deptID": 2,
+    "id": 4
+  },
+  {
+    "name": "sara",
+    "password": "1233489",
+    "email": "sara@gmail.com",
+    "deptID": 1,
+    "id": 5
+  },
+  {
+    "name": "ismail",
+    "password": "12334fj89",
+    "email": "ismail@gmail.com",
+    "deptID": 2,
+    "id": 6
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Image Processing",
+    "content": "Processing and analysis of digital images",
+    "deptID": 1
+  },
+  {
+    "id": 2,
+    "name": "Algorithms",
+    "content": "Study of algorithm design and analysis",
+    "deptID": 1
+  },
+  {
+    "id": 3,
+    "name": "Project Management",
+    "content": "Techniques and practices for managing projects effectively",
+    "deptID": 2
+  },
+  {
+    "id": 4,
+    "name": "Multimedia",
+    "content": "Creation and manipulation of various media types",
+    "deptID": 3
+  },
+  {
+    "name": "Database Management",
+    "content": "Relational database concepts",
+    "deptID": 1,
+    "id": 5
+  }
+]
