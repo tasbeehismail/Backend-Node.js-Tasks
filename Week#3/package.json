@@ -1,0 +1,27 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "Assignment Week-3 ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tasbeehismail/Backend-Node.js-Tasks.git"
+  },
+  "keywords": [
+    "express.js",
+    "node.js",
+    "javascript",
+    "api",
+    "gym",
+    "system"
+  ],
+  "author": "Tasbeeh Ismail",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tasbeehismail/Backend-Node.js-Tasks/issues"
+  },
+  "homepage": "https://github.com/tasbeehismail/Backend-Node.js-Tasks#readme"
+}

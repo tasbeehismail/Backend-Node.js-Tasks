@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "Tasbeeh Ahmed",
+    "nationalId": "30789119883",
+    "phone-number": "01084733632",
+    "membership": {
+      "from": "2024-01-01",
+      "to": "2024-12-31",
+      "cost": 500
+    },
+    "status": "active",
+    "trainerId": 2
+  },
+  {
+    "id": 2,
+    "name": "Anas Ismail",
+    "nationalId": "307863647623",
+    "phone-number": "01084081272",
+    "membership": {
+      "from": "2024-05-21",
+      "to": "2025-3-31",
+      "cost": 800
+    },
+    "status": "active",
+    "trainerId": 2
+  },
+  {
+    "id": 3,
+    "name": "Sara Ismail",
+    "nationalId": "123456789",
+    "phone-number": "01234567890",
+    "membership": {
+      "from": "2024-01-01",
+      "to": "2024-12-31",
+      "cost": 500
+    },
+    "status": "active",
+    "trainerId": 2
+  },
+  {
+    "id": 4,
+    "name": "Youssef Abdallah",
+    "nationalId": "987654321",
+    "phone-number": "01987654321",
+    "membership": {
+      "from": "2024-02-15",
+      "to": "2024-08-14",
+      "cost": 350
+    },
+    "status": "freeze",
+    "trainerId": 1
+  }
+]
