@@ -1,0 +1,33 @@
+{
+  "name": "task-5",
+  "version": "1.0.0",
+  "description": "assignment#5 for node.js course",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tasbeehismail/Backend-Node.js-Tasks.git"
+  },
+  "keywords": [
+    "node.js",
+    "express.js",
+    "mysql2",
+    "apis",
+    "database"
+  ],
+  "author": "Tasbeeh Ismail",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tasbeehismail/Backend-Node.js-Tasks/issues"
+  },
+  "homepage": "https://github.com/tasbeehismail/Backend-Node.js-Tasks#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7",
+    "nodemon": "^3.1.0"
+  }
+}
