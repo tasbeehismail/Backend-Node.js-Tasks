@@ -32,3 +32,5 @@ CREATE TABLE orderItems (
 );
 
 ALTER TABLE orderItems ADD CONSTRAINT UNIQUE(product_id, order_id);
+
+ALTER TABLE customers ADD COLUMN password VARCHAR(255) NOT NULL;

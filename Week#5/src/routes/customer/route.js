@@ -4,9 +4,10 @@ import customerController from "../../controller/customer.js";
 const app = Router();
 
 
-app
-  .route("/")
-  .get(customerController.getAllCustomers)  
+app.route('/signup')
+  .post(customerController.signup);
 
-
+app.route('/login')
+  .post(customerController.login);
+  
 export default app;
