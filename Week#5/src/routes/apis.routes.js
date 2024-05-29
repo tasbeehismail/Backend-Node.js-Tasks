@@ -5,7 +5,7 @@ import order from "./order/route.js";
 import product from "./product/route.js";
 
 app.use("/customer/", customer);
-//app.use("/order/", order);
+app.use("/order/", order);
 app.use("/product/", product);
 
 app.get("*", async (req, res) => {
