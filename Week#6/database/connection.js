@@ -1,10 +1,8 @@
 import { Sequelize } from 'sequelize';
 
-const sequelize = new Sequelize('social-media', 'root', '', {
-    host: '127.0.0.1',
-    dialect: 'mysql',
-    port: '3309'
-});
+const sequelize = new Sequelize(
+    'mysql://unsag0hutafbgq1t:JqAOVRVcbHAwrKO8nYKg@buw1gdhy8cmuy3ukmgkf-mysql.services.clever-cloud.com:3306/buw1gdhy8cmuy3ukmgkf'
+);
 
 sequelize.authenticate()
     .then(() => {
