@@ -7,7 +7,7 @@ import '../database/models/associations.js';
 import sequelize from '../database/connection.js';
 
 const bootstrap = (app) => {
-    sequelize.sync({alter: true}); 
+    sequelize.sync({alter: false}); 
 
     app.use(express.json());
 

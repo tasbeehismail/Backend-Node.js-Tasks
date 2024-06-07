@@ -3,18 +3,18 @@ const router = Router();
 import * as commentController from "./controller/comment.js";
 
 // create comment endpoint
-router.post('/create', commentController.createComment);
+router.post('/create/:user_id/:post_id', commentController.createComment);
 
 // get comments of specific endpoint 
-router.get('/', commentController.getComments);
+router.get('/post/:post_id', commentController.getComments);
 
 // get comment endpoint
-router.get('/:id', commentController.getComment);   
+router.get('/:comment_id', commentController.getComment);   
 
 // update comment endpoint
-router.patch('/update/:id', commentController.updateComment);
+router.patch('/update/:comment_id', commentController.updateComment);
 
 // delete comment endpoint
-router.delete('/delete/:id', commentController.deleteComment);
+router.delete('/delete/:comment_id', commentController.deleteComment);
 
 export default router;
