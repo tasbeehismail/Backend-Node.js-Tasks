@@ -1,4 +1,6 @@
 import userModel from '../../../../database/models/users.js';
+import commentModel from '../../../../database/models/comments.js';
+import postModel from '../../../../database/models/posts.js';
 import bcrypt from 'bcrypt';
 
 // signup endpoint
@@ -49,3 +51,34 @@ export const login = async (req, res) => {
 export const logout = async (req, res) => {
     return res.status(200).json({ message: 'Logout successful' });
 };
+// Special endpoint to get a specific user with a specific post and post’s comments 
+export const getUser = async (req, res) => {
+    const { user_id } = req.params;
+    try {
+        const user = await userModel.findOne({ where: { user_id } });
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+        const posts = await postModel.findAll({ where: { user_id, isDeleted: false }, attributes: { exclude: ['user_id', 'isDeleted']} });
+        for (let i = 0; i < posts.length; i++) {
+            const comments = await commentModel.findAll({ 
+                where: { 
+                    post_id: posts[i].post_id, 
+                    isDeleted: false 
+                }, 
+                attributes: {
+                    exclude: ['post_id', 'isDeleted']
+                } 
+            });
+            posts[i].dataValues.comments = comments;
+        }
+
+        const response = {
+            username: user.username,
+            posts
+        };
+        return res.status(200).json(response);
+    } catch (error) {
+        return res.status(500).json({ message: 'Internal server error', error });
+    }
+}   
