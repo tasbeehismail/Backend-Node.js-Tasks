@@ -1,7 +1,5 @@
 import { DataTypes } from 'sequelize';
 import sequelize from '../connection.js';
-import postModel from './posts.js';
-import commentModel from './comments.js';
 
 const userModel = sequelize.define('user', {
     user_id: {
